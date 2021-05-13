@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koh Phi Phi Beach Resort</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- datePicker style -->
+    <link rel="stylesheet" href="MCDatepicker-master/dist/mc-calendar.min.css" /> 
+    
+</head>
+<body>
+<section id="showcase" class="d-flex justify-content-center align-items-center">
+    <div id="overlay"></div>
+    <div class="container text-white text-center" id="header">
+        <h3 class="display-5 mb-0">EXPERIENCE PARADISE</h3>
+        <h1 class="display-1">Phi Phi The Beach Resort</h1>
+        <p class="lead d-none d-md-block"> Enjoy peace, explore beautiful nature, go diving. It's all within reach with
+            us. </p>
+        <h3>Make reservation today</h3>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="text">First Name</label>
+                <input type="text" class="form-control" id="fname" value="John" required="">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="text">Last Name</label>
+                <input type="text" class="form-control" id="fname" value="Black" required="">
+
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="date">Arrival</label>
+                <input type="date" class="form-control" id="date" placeholder="">
+
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="date">Departure</label>
+                <input type="date" class="form-control" id="date" placeholder="">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="yourEmail@gmail.com">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="rooms">Rooms</label>
+                <select class="custom-select" id="rooms" required="">
+                    <option selected="" disabled="" value="">3</option>
+                    <option selected="" disabled="" value="">2</option>
+                    <option selected="" disabled="" value="">1</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="rooms">Adults</label>
+                <select class="custom-select" id="rooms" required="">
+                    <option selected="" disabled="" value="">4</option>
+                    <option selected="" disabled="" value="">3</option>
+                    <option selected="" disabled="" value="">2</option>
+                    <option selected="" disabled="" value="">1</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button id="book" class="btn btn-lg btn-primary px-3 mt-4">Book Now</button>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col mt-5">
+                <button id="video" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#video">See for
+                    yourself</button>
+                </div>
+            </div>
+    </div>
+</section>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary text-white">
+        <a href="" class="navbar-brand "><h3 class="mb-0">Phi Phi The Beach Resort</h3></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="animace.html" class="nav-link"><i class="fas fa-dice"></i></a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#historie" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#cenik" class="nav-link">Price</a></li>
+                <li class="nav-item"><a href="#galerie" class="nav-link">Galery</a></li>
+                <li class="nav-item"><a href="#kontakty" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<section id="historie">
+    <div class="container text-center mt-5">
+        <h2>ABOUT</h2>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <h3>Koh Phi Phi Island</h3>
+                From archaeological discoveries, it is believed that the area was one of the oldest communities in
+                Thailand, dating back to the prehistoric period. It is believed that this province may have taken
+                its name from Krabi, which means 'sword'. This may come from a legend that an ancient sword was
+                unearthed prior to the city's founding.
+                The name Phi Phi (pronounced "phi-phi") originates from Malay. The original name for the islands was
+                Pulau Api-Api ('the fiery isle'). The name refers to the Pokok Api-Api, or "fiery tree" (grey
+                mangrove) which is found on the islands.<br> <span class="text-muted">- Wikipedia</span>
+            </div>
+            <div class="col-md-4 p-3">
+                <h3>Resort</h3>
+                Phi Phi The Beach Resort offers hillside accommodation with beautiful ocean views and located on the
+                long beach of Phi Phi Island. It provides snorkelling and kayaking equipment and has an outdoor
+                pool. <br>
+                Phi Phi Beach Resort is a 2-hour, 30-minute drive from Phuket and Krabi Airports. The route includes
+                land and sea transport.<br>
+                Rooms at The Beach Resort Phi Phi are decorated with teak wood furnishings and a private balcony. They
+                are equipped with satellite TV and tea and coffee making facilities. 
+                <br> <span class="text-muted">- Booking</span>
+            </div>
+            <div class="col-md-4 p-3 mt-4">
+                <img src="images/phiphi.jpg" alt="PhiPhi" class="img-fluid d-none d-md-inline">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="cenik">
+        <div class="container text-center mt-2 p-3">
+            <h2>YOU'RE JUST SEC AWAY FROM EXPERIENCING PARADISE</h2>
+            <div class="row m-2">
+                <div class="col-md-6  m-6 p-3">
+                    <div class="card">
+                        <img src="images/pokoj1.jpg" alt="pokoj1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Standart without view</h2>
+                            <p class="card-text">
+                                1 hotel room with 1 double bed - 30 m<sup>2</sup><br>
+                                Balcony<br>
+                                Pool with a view<br>
+                                Air conditioning<br>
+                                Bathroom included in the room<br>
+                                Flat screen TV <br>Terrace Minibar</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Night</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>60$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>90$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3&more</th>
+                                        <td>120$</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Book Me</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-6 p-3">
+                    <div class="card">
+                        <img src="images/pokoj2.jpg" alt="pokoj2" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Villa Superior</h2>
+                            <p class="card-text">
+                                1 villa with 1 double bed - 30 m<sup>2</sup><br>
+                                Balcony with garden view<br>
+                                Pool with a view<br>
+                                Air conditioning<br>
+                                Bathroom included in the room<br>
+                                Flat screen TV <br>Terrace Minibar
+                            </p>
+    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Night</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>80$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>120$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3&more</th>
+                                        <td>160$</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Book Me</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row m-2">
+                <div class="col-md-6 m-6 p-3">
+                    <div class="card">
+                        <img src="images/pokoj3.jpg" alt="pokoj3" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Villa Deluxe</h2>
+                            <p class="card-text">
+                                1 villa with 1 double bed - 55 m<sup>2</sup><br>
+                                Balcony with sea view<br>
+                                Pool with a view<br>
+                                Air conditioning<br>
+                                Bathroom included in the room<br>
+                                Flat screen TV <br>Terrace Minibar
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nights</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>100$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>150$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3&more</th>
+                                        <td>200$</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-lg btn-outline-primary mb-1" data-container="body" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Book Me</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-6 p-3">
+                    <div class="card">
+                        <img src="images/pokoj4.jpeg" alt="pokoj4" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Villa Grand Deluxe</h2>
+                            <p class="card-text">
+                                <p class="card-text">
+                                    1 villa with 1 double bed - 55 m<sup>2</sup><br>
+                                    Balcony with sea view<br>
+                                    Pool with a view<br>
+                                    Air conditioning<br>
+                                    Bathroom included in the room<br>
+                                    Flat screen TV <br>Terrace Minibar
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Night</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>120$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>220$</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3&more</th>
+                                        <td>320$</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Book Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie">
+        <div class="container mt-5 text-center">
+            <h2>GALERY OF OUR ROOMS</h2>
+            <div id="carouselExampleCaptions" class="carousel slide p-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                </ol>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/pokoj1.jpg" class="d-block w-100" alt="pokoj1">
+                        <div class="carousel-caption">
+                            <h5>Standart without view</h5>
+                            <p>Standart without view includes 1 hotel room with 1 double bed, balcony, pool with view. Bathroom is a included in the room. There is also flat screen TV and minibar.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pokoj2.jpg" class="d-block w-100" alt="pokoj2">
+                        <div class="carousel-caption">
+                            <h5>Villa Superior</h5>
+                            <p>Villa Superioe includes 1 villa with 1 double bed, balcony with garden view and pool with view. Bathroom is a included in the room. There is also flat screen TV and minibar.</p>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pokoj3.jpg" class="d-block w-100" alt="pokoj3">
+                        <div class="carousel-caption">
+                            <h5>Villa Deluxe</h5>
+                            <p>Villa Deluxe includes 1 villa with 1 double bed, balcony with garden view and pool with view. Bathroom is a included in the room. There is also flat screen TV and minibar.</p>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pokoj4.jpeg" class="d-block w-100" alt="pokoj4">
+                        <div class="carousel-caption">
+                            <h5>Villa Grand Deluxe</h5>
+                            <p>Villa Grand Deluxe includes 1 villa with 1 double bed, balcony with sea view and pool with view. Bathroom is a included in the room. There is also flat screen TV and minibar.</p>
+                          </div>
+                    </div>
+                </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="kontakty" >
+        <div class="container text-center mt-5">
+            <h2>CONTACT US</h2>
+            <div class="row p-3">
+                <div class="col-md-4 mt-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31627.242285304153!2d98.75944809351134!3d7.746764616565772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051df0640b0a4a5%3A0xb4f1edc798002c5e!2sPhi%20Phi%20The%20Beach%20Resort!5e0!3m2!1scs!2scz!4v1620635352651!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-4 p-4 mt-5">
+                  <a href="https://www.facebook.com"><i class="fab fa-facebook text-primary fa-2x mt-3 p-3"></i></a><br>
+                  <a href="https://www.twitter.com"><i class="fab fa-twitter text-primary fa-2x mt-3 p-3"></i></a><br>
+                  <a href="https://www.instagram.com"><i class="fab fa-instagram text-primary fa-2x mt-3 p-3"></i></a><br>
+                </div>
+                <div class="col-md-4">
+                    <p class="lead p-5 mt-5">
+                        Address: 177 Ao Nang, Phi Phi Island Krabi 81210, Thailand <br>
+                        Tel.: +66865497879 <br>
+                        resvn@phiphithebeach.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="bg-secondary">
+        <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#historie" class="nav-link text-white">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cenik" class="nav-link text-white">PRICE</a>
+            </li>
+            <li class="nav-item">
+                <a href="#kontakty" class="nav-link text-white">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">BOOK NOW</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="modal" id="video" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center">Our Paradise</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="414" src="https://www.youtube.com/embed/ip1lsDgypso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+<!-- skript pro popover -->
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<!-- datePicker -->
+<script src="MCDatepicker-master/dist/mc-calendar.min.js"></script>
+</body>
+</html>

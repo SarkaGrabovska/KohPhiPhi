@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    
+    <style>
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+
+        }
+
+.ctverec {
+
+    height: 100px;
+    width: 100px;
+    background-color: #36b3a8;
+    animation-name: rotate_animation;
+    animation-duration: 1s;
+    animation-delay:.5s;
+    animation-iteration-count: infinite;
+
+}
+
+h1 {
+    padding: 150px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+@keyframes rotate_animation {
+
+0% {transform: rotateX(180deg);}
+50% {transform: rotateX(0deg);}
+50% {transform: rotateY(0deg);}
+100% {transform: rotateY(180deg);}
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IT WILL BE LEG ... WAIT FOR IT..</h1>
+        <div class="ctverec"></div>        
+    </div>
+    
+</body>
+</html>
